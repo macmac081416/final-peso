@@ -1,6 +1,6 @@
 import LoginForm from './Components/Loggedin/Loggedin';
 import { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Form } from './Components/signUp/Form.jsx';
 
 
@@ -15,11 +15,11 @@ function App() {
 
     <div className="App">
 <Router>
-<Switch>
+<Routes>
 <Route path="../src/Components/signUp/Form.jsx">
 <Form />
 </Route>
-</Switch>
+</Routes>
 </Router>
 
 {isLoggedin ? (
@@ -47,7 +47,10 @@ function App() {
 ) : (
 
   <LoginForm setIsLoggedIn={setIsLoggedIn} />
+  
 )
+
+
     }
       </div>
           
