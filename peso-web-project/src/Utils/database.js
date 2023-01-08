@@ -22,6 +22,11 @@ export const database = [
     {
         username: "placewell01@gmail.com",
         password: "mark"
+    },
+
+    {
+        username: "mark@gmail",
+        password: "1234"
     }
 
 

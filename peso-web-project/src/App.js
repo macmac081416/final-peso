@@ -1,5 +1,7 @@
 import LoginForm from './Components/Loggedin/Loggedin';
 import { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Form } from './Components/signUp/Form.jsx';
 
 
 import "./App.css";
@@ -9,8 +11,16 @@ function App() {
 
 
   return (
-    <div className="App">
 
+
+    <div className="App">
+<Router>
+<Switch>
+<Route path="../src/Components/signUp/Form.jsx">
+<Form />
+</Route>
+</Switch>
+</Router>
 
 {isLoggedin ? (
 <>
@@ -32,6 +42,7 @@ function App() {
   <label for="age">Age:</label>
   <input type="number" id="age" name="age" className='formOne'/>
   </form> 
+  <button>Home</button>
 </>
 ) : (
 
@@ -39,7 +50,10 @@ function App() {
 )
     }
       </div>
+          
+
   );
+  
 }
 
 export default App;

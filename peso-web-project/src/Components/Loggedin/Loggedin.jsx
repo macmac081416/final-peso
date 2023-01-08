@@ -9,6 +9,7 @@ import {Link} from "react-router-dom";
 
 
 
+
 const LoginForm = ({ setIsLoggedIn }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -92,10 +93,10 @@ return (
 <input type="submit" value="Log In" className="login-button"/>
 </form>
 <div className="link_containerOne">
-<Link to="{../signUp/FormSignup.jsx}">Forgot Password</Link>
+<a href="#">Forgot Password</a>
 </div>
 <div className="link_containerTwo">
-<Link to="{../signUp/FormSignup.jsx}">Sign-Up</Link>
+  <Link to="../signUp/Form.jsx">Sign-Up</Link>
 </div>
 </Card>);
 
