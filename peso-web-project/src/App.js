@@ -1,6 +1,7 @@
 import LoginForm from './Components/Loggedin/Loggedin';
 import { useState } from 'react';
-import Form from './Components/signUp/Form';
+
+
 import "./App.css";
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-<Form />
+
 
 {isLoggedin ? (
 <>

@@ -4,6 +4,7 @@ import Card from "../Card/Card.jsx";
 import { useState } from "react";
 import profile from "../image/logo.png";
 import {database} from "../../Utils/database";
+import {Link} from "react-router-dom";
 
 
 
@@ -91,10 +92,10 @@ return (
 <input type="submit" value="Log In" className="login-button"/>
 </form>
 <div className="link_containerOne">
-<a href="#" className="small">Forgot Password</a>
+<Link to="{../signUp/FormSignup.jsx}">Forgot Password</Link>
 </div>
 <div className="link_containerTwo">
-<a href="({<Form />})" className="small">Sign-Up</a>
+<Link to="{../signUp/FormSignup.jsx}">Sign-Up</Link>
 </div>
 </Card>);
 
