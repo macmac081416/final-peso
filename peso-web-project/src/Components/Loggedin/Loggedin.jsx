@@ -4,7 +4,8 @@ import Card from "../Card/Card.jsx";
 import { useState } from "react";
 import profile from "../image/logo.png";
 import {database} from "../../Utils/database";
-import {Link} from "react-router-dom";
+
+
 
 
 
@@ -96,7 +97,7 @@ return (
 <a href="#">Forgot Password</a>
 </div>
 <div className="link_containerTwo">
-  <Link to="../signUp/Form.jsx">Sign-Up</Link>
+  <a href="#">Sign-Up</a>
 </div>
 </Card>);
 

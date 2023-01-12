@@ -1,7 +1,7 @@
 import LoginForm from './Components/Loggedin/Loggedin';
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Form } from './Components/signUp/Form.jsx';
+
+
 
 
 import "./App.css";
@@ -14,13 +14,6 @@ function App() {
 
 
     <div className="App">
-<Router>
-<Routes>
-<Route path="../src/Components/signUp/Form.jsx">
-<Form />
-</Route>
-</Routes>
-</Router>
 
 {isLoggedin ? (
 <>
