@@ -11,6 +11,8 @@ import {database} from "../../Utils/database";
 
 
 
+
+
 const LoginForm = ({ setIsLoggedIn }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -65,7 +67,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
 
 
 return (
-
+<div className="loginContainer">
 <Card>
 <div className="imgs">
 <div className="container-image">
@@ -99,7 +101,8 @@ return (
 <div className="link_containerTwo">
   <a href="#">Sign-Up</a>
 </div>
-</Card>);
+</Card>
+</div>);
 
 };
 

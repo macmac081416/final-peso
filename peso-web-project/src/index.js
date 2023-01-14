@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import AppOne from './Components/AppOne';
+import AppOne from '../src/Components/AppOne';
 import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
     <AppOne />
+   
   </React.StrictMode>
 );
 
